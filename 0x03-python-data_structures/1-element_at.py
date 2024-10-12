@@ -6,7 +6,8 @@ def element_at(my_list, idx):
         my_list (list): The list to retrieve the element from.
         idx (int): The index of the element to retrieve.
     Returns:
-        The element at the specified index, or None if idx is negative or out of range.
+        The element at the specified index, or None if idx is
+        negative or out of range.
     """
     if idx < 0 or idx >= len(my_list):
         return None
