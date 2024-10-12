@@ -2,7 +2,6 @@
 def print_matrix_integer(matrix=[[]]):
     """
     Prints a matrix of integers.
-    
     Args:
         matrix (list of lists): The matrix of integers to print.
     """

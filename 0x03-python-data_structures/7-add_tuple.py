@@ -2,11 +2,9 @@
 def add_tuple(tuple_a=(), tuple_b=()):
     """
     Adds two tuples.
-    
     Args:
         tuple_a (tuple): The first tuple.
         tuple_b (tuple): The second tuple.
-    
     Returns:
         A tuple with the sum of the corresponding elements of tuple_a and tuple_b.
     """

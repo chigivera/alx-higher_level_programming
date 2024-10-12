@@ -2,10 +2,8 @@
 def max_integer(my_list=[]):
     """
     Finds the biggest integer of a list.
-    
     Args:
         my_list (list): The list of integers.
-    
     Returns:
         The maximum integer in the list, or None if the list is empty.
     """

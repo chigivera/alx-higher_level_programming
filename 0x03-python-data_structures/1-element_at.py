@@ -2,11 +2,9 @@
 def element_at(my_list, idx):
     """
     Retrieves an element from a list like in C.
-    
     Args:
         my_list (list): The list to retrieve the element from.
         idx (int): The index of the element to retrieve.
-    
     Returns:
         The element at the specified index, or None if idx is negative or out of range.
     """
