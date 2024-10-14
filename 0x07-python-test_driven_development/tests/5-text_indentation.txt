@@ -1,0 +1,68 @@
+# Test cases for text_indentation function
+
+# Import the function
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+# Test with multiple sentences
+>>> text_indentation("Hello. How are you? I'm fine: thank you.")
+Hello.
+<BLANKLINE>
+How are you?
+<BLANKLINE>
+I'm fine:
+<BLANKLINE>
+thank you.
+
+# Test with no special characters
+>>> text_indentation("This is a simple sentence")
+This is a simple sentence
+
+# Test with multiple spaces
+>>> text_indentation("Hello.   How are you?    I'm fine:   thank you.")
+Hello.
+<BLANKLINE>
+How are you?
+<BLANKLINE>
+I'm fine:
+<BLANKLINE>
+thank you.
+
+# Test with newlines
+>>> text_indentation("Hello.\nHow are you?\nI'm fine:\nthank you.")
+Hello.
+<BLANKLINE>
+How are you?
+<BLANKLINE>
+I'm fine:
+<BLANKLINE>
+thank you.
+
+# Test with non-string input
+>>> text_indentation(12345)
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string
+
+# Test with empty string
+>>> text_indentation("")
+
+# Test with only special characters
+>>> text_indentation(".?:")
+.
+<BLANKLINE>
+?
+<BLANKLINE>
+:
+<BLANKLINE>
+
+# Test with None
+>>> text_indentation(None)
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string
+
+# Test without argument
+>>> text_indentation()
+Traceback (most recent call last):
+    ...
+TypeError: text_indentation() missing 1 required positional argument: 'text'
